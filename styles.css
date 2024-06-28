@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    font-family: "Public Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.main-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.wrapper-1 {
+    background-color: rgb(121, 25, 25);
+    padding: 5em 2em;
+}
+
+.text h1{
+    color: white;
+    font-size: 2.3em;
+    font-weight: bold;
+
+}
+
+.text p {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1.7;
+    padding: 1em 0;
+}
+.text span {
+    color: orange;
+}
+.img {
+    margin-top: 4em;
+}
+
+.img img {
+    width: 100%;
+}
+
+.wrapper-2 {
+    padding: 2em;
+}
+.flex {
+    display: flex;
+    gap: 3em;
+    align-items: center;
+}
+.top-login-button {
+    display: flex;
+    justify-content: right;
+
+}
+
+.top-login-button a button {
+    border-radius: 35px;
+    padding: 1em;
+    border: 0;
+    font-weight: bold;
+}
+
+.top-login-button :hover{
+    cursor: pointer;
+}
+.top-login-button :focus{
+    background-color: rgba(240, 248, 255, 0.758);
+}
+
+.heading {
+    line-height: 1.6;
+    margin: 1em 0;
+}
+
+.input-control {
+    line-height: 2.8;
+
+}
+
+.input-control p {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.715);
+}
+
+.input-control input {
+    padding: 15px;
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid rgb(205, 204, 204);
+}
+
+.input-control input::placeholder{
+    color: grey;
+    
+}
+
+input:focus{
+    border:2px solid  rgb(16, 163, 242);
+
+}
+
+.flex .input-control {
+    width: 100%;
+}
+
+.grid-cont {
+    display: grid;
+    grid-template-columns: .4fr 5fr;
+    gap: .8em;
+}
+
+.grid-cont .input-img {
+    display: flex;
+    padding: 10px ;
+   
+}
+
+.grid-cont .grid-input {
+    align-content: center;
+}
+
+.bottom-signup-button button {
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 12px;
+    width: 100%;
+}
+.bottom-signup-button :hover{
+    background-color: brown;
+    cursor:pointer;
+}
+.bottom-signup-button :focus {
+background-color: transparent;
+}
+
+.by-sign-tc {
+    margin-top: 2em;
+    line-height: 1.6;
+    
+
+} 
+.by-sign-tc span a{
+    padding: 0 2px;
+    color: red;
+}
+
+.by-sign-tc h4{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 400;
+    
+} 
+
+.by-sign-tc h5{
+    color: red;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+
+/* login pagae */
+.heading {
+    margin-top: 3em;
+}
+.input-control {
+    margin-top: 1rem;
+}
+
+.forgot-password {
+    display: flex;
+    justify-content: end;
+    margin: 1em 0 3em;
+}
+.forgot-password :hover{
+    cursor: pointer;
+}
+
+.forgot-password p{
+    color: red;
+    
+}
+@media only screen and (max-width:780px){
+    .main-wrapper{
+        display: block;
+    }
+    .wrapper-1{
+        display: none;
+    }
+    .wrapper-2{
+        padding: 3em 6em;
+    }
+    .flex{
+        gap: 1.5em;
+    }
+
+    .input-control p{
+        font-size: 18px;
+    }
+    .by-sign-tc{
+        display: flex;
+        justify-content: center;
+    }
+
+    .by-sign-tc h4{
+        font-size: 15px;
+    
+    }
+    .by-sign-tc h5{
+        font-size: 15px;
+    
+    }
+}
+
+
+
+
+
+@media only screen and (max-width:500px){
+    .main-wrapper{
+        display: block;
+    }
+    .wrapper-1 {
+        display: none;    
+    } 
+    /* login */
+    .wrapper-2{
+        padding: 0 1em 0 1em;
+    }
+    .top-login-button {
+        margin-top: 3em;        
+    }
+    .top-login-button a button {
+        font-size: 10px;
+        font-weight: 600;        
+        
+    }
+
+    .heading h1{
+        font-size: larger;       
+    }
+
+    .heading p{
+        font-size: smaller;
+        line-height: 1.4;       
+    }
+    
+    .input-control{
+        line-height: 2.2;
+        margin: .8em 0;
+    }
+    
+    .input-control p{
+        font-size: x-small;
+        color: black;
+    }
+    .input-control input::placeholder{
+        font-size: 10px;
+        color: gray;
+        padding: 0 1em;
+    }
+    .input-control input{
+        padding: .7em;
+    }
+    .forgot-password p{
+        font-size: smaller;
+        font-weight: 500;
+    }
+
+    .by-sign-tc{
+        display: block;
+        margin: 0;
+    }
+
+    .by-sign-tc h5{
+        display: flex;
+        justify-content: center;
+        font-size: 12.5px;
+        font-weight: 500;
+        color: red;
+        
+       
+    }
+
+    .by-sign-tc span {
+        padding: 0 3px;
+        font-weight: 500;
+    }
+
+    .by-sign-tc h4{
+        display: flex;
+        justify-content: center;
+        font-weight: 400;                
+        font-size: 13px;
+
+    }
+
+    .bottom-signup-button a button{
+        font-size: small;
+    }
+    .bottom-signup-button{
+        margin-bottom: 2em;
+    }
+    /* sign up */
+    .flex {
+        display: block;
+    }
+
+
+
+}
+
+@media only screen and (max-width:370px){
+    .by-sign-tc h4{
+        font-size: 10px;
+    }
+    .by-sign-tc h5{
+        font-size: 10px;
+    }
+    
+}
